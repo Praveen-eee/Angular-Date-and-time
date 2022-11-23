@@ -1,0 +1,11 @@
+<label for="s1">Choose format: </label>
+
+<select #s1 (change)="router(s1.value)">
+  <option>Select</option>
+  <option value="sample-1">Sample 1</option>
+  <option value="sample-2">Sample 2</option>
+  <option value="home">Home</option>
+</select>
+<button routerLink="{{ link }}">SUBMIT</button>
+<!-- #s1 (change)="router(s1.value)" -->
+<router-outlet></router-outlet>
